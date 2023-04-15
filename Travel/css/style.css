@@ -430,8 +430,13 @@ body {
     margin: auto;
 }
 
+/* Header style start */
+
 .header {
-    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__wrapper {
@@ -439,6 +444,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    padding-top: 56px;
 }
 
 .header__list {
@@ -450,6 +456,28 @@ body {
     margin-right: 82px;
 }
 
-.header__item:last-child {
+.header__item:lastgit-child {
     margin-right: 0;
 }
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .75;
+}
+
+/* Header style end */
+
+/* Intro style start */
+
+.intro {
+    height: 100vh;
+    background: url(../img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+/* Intro style end */
